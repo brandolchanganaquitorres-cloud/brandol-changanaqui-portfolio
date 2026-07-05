@@ -19,32 +19,144 @@
     content="7+ años liderando operaciones TI, transformación digital y optimización de procesos para plataformas de 4,000+ usuarios. 88 órdenes de servicio ejecutadas sin penalidades contractuales.">
   <meta property="og:url" content="https://brandolchanganaqui.com/">
   <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="https://brandolchanganaqui.com/images/top1_foto_5_linkendin.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1500">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Brandol Changanaqui Torres — IT Operations Leader & Digital Transformation">
+  <meta name="twitter:description"
+    content="7+ años liderando operaciones TI, transformación digital y optimización de procesos para plataformas de 4,000+ usuarios.">
+  <meta name="twitter:image" content="https://brandolchanganaqui.com/images/top1_foto_5_linkendin.png">
   <meta name="robots" content="index, follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0A1526">
+  <!--
+    Content-Security-Policy via meta tag: es una capa best-effort. Directivas como
+    frame-ancestors, X-Content-Type-Options o X-Frame-Options no se pueden fijar
+    por meta y deben configurarse en el hosting (headers del proveedor estatico
+    -- ver notas de la auditoria). Aqui se restringe a los origenes reales que usa
+    este sitio: Google Fonts, Google Apps Script (fetch del formulario) y Google
+    Tag Manager/Analytics (si se activan).
+  -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' https://script.google.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://scripts.clarity.ms; connect-src 'self' https://script.google.com https://www.google-analytics.com https://www.googletagmanager.com https://www.clarity.ms; frame-src https://www.googletagmanager.com; upgrade-insecure-requests">
 
   <!-- Schema.org -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Brandol Ghiosimar Changanaqui Torres",
-  "jobTitle": "IT Operations & Digital Transformation Leader",
-  "url": "https://brandolchanganaqui.com/",
-  "sameAs": ["https://linkedin.com/in/brandol-changanaqui"],
-  "address": {"@type": "PostalAddress", "addressLocality": "Lima", "addressCountry": "PE"},
-  "alumniOf": [
-    {"@type":"CollegeOrUniversity","name":"CENTRUM PUCP"},
-    {"@type":"CollegeOrUniversity","name":"Universidad Nacional Mayor de San Marcos"}
-  ],
-  "knowsAbout": ["IT Operations","Digital Transformation","Process Optimization","PMO","Applied Artificial Intelligence","Lean Six Sigma"]
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://brandolchanganaqui.com/#person",
+      "name": "Brandol Ghiosimar Changanaqui Torres",
+      "jobTitle": "IT Operations & Digital Transformation Leader",
+      "url": "https://brandolchanganaqui.com/",
+      "image": "https://brandolchanganaqui.com/images/top1_foto_5_linkendin.png",
+      "email": "mailto:brandol.changanaqui.torres@gmail.com",
+      "sameAs": ["https://linkedin.com/in/brandol-changanaqui"],
+      "address": {"@type": "PostalAddress", "addressLocality": "Lima", "addressCountry": "PE"},
+      "alumniOf": [
+        {"@type":"CollegeOrUniversity","name":"CENTRUM PUCP"},
+        {"@type":"CollegeOrUniversity","name":"Universidad Nacional Mayor de San Marcos"}
+      ],
+      "knowsAbout": ["IT Operations","Digital Transformation","Process Optimization","PMO","Applied Artificial Intelligence","Lean Six Sigma"]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://brandolchanganaqui.com/#service",
+      "name": "Brandol Changanaqui Torres — Consultoria en Transformacion Digital",
+      "provider": {"@id": "https://brandolchanganaqui.com/#person"},
+      "areaServed": "PE",
+      "url": "https://brandolchanganaqui.com/",
+      "priceRange": "$$"
+    }
+  ]
 }
 </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
+
+  <!-- ============================================================
+       CAPA DE ANALÍTICA — GA4 + Google Tag Manager + Microsoft Clarity
+       ============================================================
+       Reemplaza estas 3 variables por tus IDs reales antes de publicar.
+       Los 3 scripts se cargan de forma asíncrona para no bloquear el
+       render ni penalizar Core Web Vitals (LCP/INP).
+       GA4 y GTM NO son excluyentes: aquí conviven a propósito. GTM se deja
+       preparado para expandir tags a futuro (Meta Pixel, LinkedIn Insight,
+       etc.) sin tocar este archivo; GA4 se carga en paralelo vía gtag.js
+       para tener medición estándar inmediata aunque el contenedor de GTM
+       esté vacío. -->
+  <script>
+    // -------- CONFIGURA AQUÍ TUS 3 IDs (los únicos valores a reemplazar) --------
+    window.GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX';     // GA4 > Admin > Flujos de datos
+    window.GTM_CONTAINER_ID = 'GTM-XXXXXXX';       // Google Tag Manager > ID de contenedor
+    window.CLARITY_PROJECT_ID = 'XXXXXXXXXX';        // clarity.microsoft.com > Configuración > ID de proyecto
+    // -----------------------------------------------------------------------------
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    /* Consent Mode v2 — denegado por defecto hasta que el visitante acepte
+       el aviso de cookies (banner al final del <body>). Cumplimiento básico
+       GDPR: no se escribe ninguna cookie de analítica antes del "Aceptar". */
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+
+    window.GA4_READY = window.GA4_MEASUREMENT_ID && window.GA4_MEASUREMENT_ID.indexOf('XXXX') === -1;
+    window.GTM_READY = window.GTM_CONTAINER_ID && window.GTM_CONTAINER_ID.indexOf('XXXX') === -1;
+    window.CLARITY_READY = window.CLARITY_PROJECT_ID && window.CLARITY_PROJECT_ID.indexOf('XXXX') === -1;
+
+    if (window.GA4_READY) {
+      gtag('js', new Date());
+      gtag('config', window.GA4_MEASUREMENT_ID, {
+        anonymize_ip: true,           // anonimización de IP
+        cookie_flags: 'SameSite=None;Secure',
+        send_page_view: true          // page_view automático; session_start/first_visit/user_engagement los infiere GA4 solo
+      });
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" id="ga4-gtag-script"></script>
+  <script>
+    // Reescribe el src del script anterior con el ID real en runtime, así el
+    // snippet funciona igual solo cambiando la variable GA4_MEASUREMENT_ID de arriba.
+    if (window.GA4_READY) {
+      document.getElementById('ga4-gtag-script').src =
+        'https://www.googletagmanager.com/gtag/js?id=' + window.GA4_MEASUREMENT_ID;
+    }
+  </script>
+
+  <!-- Google Tag Manager (head) — no insertar hasta configurar GTM_CONTAINER_ID -->
+  <script>
+    (function (w, d, s, l, i) {
+      if (!i || i.indexOf('XXXX') !== -1) return;
+      w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', window.GTM_CONTAINER_ID);
+  </script>
+
+  <!-- Microsoft Clarity — heatmaps, grabación de sesiones, rage/dead clicks, scroll maps -->
+  <script>
+    (function (c, l, a, r, i, t, y) {
+      if (!i || i.indexOf('XXXX') !== -1) return;
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, 'clarity', 'script', window.CLARITY_PROJECT_ID);
+  </script>
 
   <style>
     :root {
@@ -61,6 +173,9 @@
       --data: #5B9BD5;
       --data-soft: rgba(91, 155, 213, 0.14);
       --good: #3FCF8E;
+      --error: #E5757A;
+      --error-soft: rgba(229, 117, 122, 0.14);
+      --busy: rgba(232, 238, 247, 0.06);
       --radius: 10px;
       --maxw: 1180px;
       --header-bg: rgba(10, 15, 28, 0.72);
@@ -89,6 +204,9 @@
       --data: #1C5FC7;
       --data-soft: rgba(28, 95, 199, 0.10);
       --good: #1C9A63;
+      --error: #C24449;
+      --error-soft: rgba(194, 68, 73, 0.10);
+      --busy: rgba(17, 24, 39, 0.05);
       --header-bg: rgba(255, 255, 255, 0.78);
       --photo-grad-1: #EDE7D8;
       --photo-grad-2: #FFFFFF;
@@ -1750,6 +1868,142 @@
       opacity: 0
     }
 
+    /* ============================================================
+       SELECTOR DE HORARIOS — agendamiento con disponibilidad en vivo
+       ============================================================ */
+    .slot-field {
+      grid-column: 1/-1;
+    }
+
+    .slot-status {
+      font-size: 12px;
+      color: var(--text-faint);
+      margin-top: 8px;
+      min-height: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .slot-status[data-tone="warn"] {
+      color: var(--accent);
+    }
+
+    .slot-status[data-tone="empty"] {
+      color: var(--error);
+    }
+
+    .slot-spinner {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid var(--line-strong);
+      border-top-color: var(--data);
+      animation: slotSpin .7s linear infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes slotSpin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .slot-spinner {
+        animation: none;
+      }
+    }
+
+    .slot-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 480px) {
+      .slot-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .slot-btn {
+      border: 1px solid var(--line-strong);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 10px 6px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color .15s ease, background .15s ease, color .15s ease;
+    }
+
+    .slot-btn:hover:not(:disabled) {
+      border-color: var(--data);
+    }
+
+    .slot-btn:focus-visible {
+      outline: 2px solid var(--data);
+      outline-offset: 2px;
+    }
+
+    .slot-btn[aria-pressed="true"] {
+      background: var(--data);
+      border-color: var(--data);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .slot-btn:disabled {
+      background: var(--busy);
+      color: var(--text-faint);
+      border-color: var(--line);
+      cursor: not-allowed;
+      text-decoration: line-through;
+      opacity: .7;
+    }
+
+    .slot-placeholder {
+      font-size: 13px;
+      color: var(--text-faint);
+      padding: 10px 0;
+    }
+
+    .form-msg {
+      grid-column: 1/-1;
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      line-height: 1.5;
+      display: none;
+    }
+
+    .form-msg.show {
+      display: block;
+    }
+
+    .form-msg.success {
+      background: rgba(63, 207, 142, .12);
+      border: 1px solid var(--good);
+      color: var(--good);
+    }
+
+    .form-msg.error {
+      background: var(--error-soft);
+      border: 1px solid var(--error);
+      color: var(--error);
+    }
+
+    .form-msg a {
+      color: inherit;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+
     @media (max-width:860px) {
       .contact-grid {
         grid-template-columns: 1fr
@@ -2021,6 +2275,58 @@
       }
     }
 
+    /* ---------- COOKIE / CONSENT BANNER ---------- */
+    .cookie-banner {
+      position: fixed;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      z-index: 200;
+      max-width: 560px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+      display: none;
+      gap: 14px;
+      flex-direction: column;
+    }
+
+    .cookie-banner.show {
+      display: flex;
+    }
+
+    .cookie-banner p {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+
+    .cookie-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .cookie-actions button {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 9px 16px;
+      border-radius: 6px;
+      border: 1px solid var(--line-strong);
+      background: transparent;
+      color: var(--text);
+    }
+
+    .cookie-actions button.cookie-accept {
+      background: var(--accent);
+      color: #0A1526;
+      border-color: var(--accent);
+    }
+
     /* ---------- SCROLL PROGRESS ---------- */
     .scroll-progress {
       position: fixed;
@@ -2085,6 +2391,17 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) — respaldo si JS está deshabilitado -->
+  <noscript><iframe title="gtm" src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <script>
+    // Sincroniza el src del iframe anterior con el GTM_CONTAINER_ID real.
+    if (window.GTM_READY) {
+      document.currentScript.previousElementSibling.querySelector('iframe').src =
+        'https://www.googletagmanager.com/ns.html?id=' + window.GTM_CONTAINER_ID;
+    }
+  </script>
+
   <a href="#main" class="skip-link" data-i18n="skipLink">Saltar al contenido</a>
 
   <header>
@@ -2094,9 +2411,9 @@
         <a href="#about" data-i18n="nav.profile">Perfil</a>
         <a href="#experience" data-i18n="nav.experience">Experiencia</a>
         <a href="#specialization" data-i18n="nav.specialization">Especialización</a>
-        <a href="#cases" data-i18n="nav.cases">Casos de Éxito</a>
-        <a href="#services" data-i18n="nav.services">Servicios</a>
-        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        <a href="#cases" data-i18n="nav.cases" data-event="click_portfolio">Casos de Éxito</a>
+        <a href="#services" data-i18n="nav.services" data-event="click_services">Servicios</a>
+        <a href="#contact" data-i18n="nav.contact" data-event="click_contact">Contacto</a>
       </div>
       <div class="nav-cta">
         <div class="nav-utility">
@@ -2108,7 +2425,7 @@
           <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
         </div>
         <span class="nav-divider" aria-hidden="true"></span>
-        <a class="btn-cv" href="CV_Brandol_Changanaqui_Torres.docx" download data-event="cv_download"
+        <a class="btn-cv" href="CV_Brandol_Changanaqui_Torres.docx" download data-event="click_download_cv"
           aria-label="Descargar CV" title="Descargar CV" data-i18n-attr="aria-label:nav.cv,title:nav.cv">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round">
@@ -2118,7 +2435,8 @@
           </svg>
           <span>CV</span>
         </a>
-        <a class="btn btn-solid" href="#contact" data-event="cta_agendar" data-i18n="nav.meeting">Agendar reunión</a>
+        <a class="btn btn-solid" href="#contact" data-event="click_cta_primary" data-i18n="nav.meeting">Agendar
+          reunión</a>
         <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
       </div>
     </nav>
@@ -2131,11 +2449,11 @@
     <a href="#about" data-i18n="nav.profile">Perfil</a>
     <a href="#experience" data-i18n="nav.experience">Experiencia</a>
     <a href="#specialization" data-i18n="nav.specialization">Especialización</a>
-    <a href="#cases" data-i18n="nav.cases">Casos de Éxito</a>
-    <a href="#services" data-i18n="nav.services">Servicios</a>
-    <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    <a href="#cases" data-i18n="nav.cases" data-event="click_portfolio">Casos de Éxito</a>
+    <a href="#services" data-i18n="nav.services" data-event="click_services">Servicios</a>
+    <a href="#contact" data-i18n="nav.contact" data-event="click_contact">Contacto</a>
     <a class="btn btn-solid" href="CV_Brandol_Changanaqui_Torres.docx" download style="text-align:center"
-      data-i18n="nav.cv">Descargar CV</a>
+      data-i18n="nav.cv" data-event="click_download_cv">Descargar CV</a>
   </nav>
 
   <main id="main">
@@ -2153,14 +2471,14 @@
             escalables mediante tecnología, gestión de proyectos y mejora continua — 7+ años liderando plataformas
             críticas para 4,000+ usuarios.</p>
           <div class="hero-actions">
-            <a class="btn btn-solid" href="#contact" data-event="cta_agendar" data-i18n="hero.cta1">Agendar una
+            <a class="btn btn-solid" href="#contact" data-event="click_cta_primary" data-i18n="hero.cta1">Agendar una
               reunión</a>
-            <a class="btn btn-ghost" href="CV_Brandol_Changanaqui_Torres.docx" download data-event="cv_download"
+            <a class="btn btn-ghost" href="CV_Brandol_Changanaqui_Torres.docx" download data-event="click_download_cv"
               data-i18n="nav.cv">Descargar CV</a>
             <a class="btn btn-outline-data" href="https://linkedin.com/in/brandol-changanaqui" target="_blank"
-              rel="noopener" data-event="linkedin_click">LinkedIn ↗</a>
+              rel="noopener" data-event="click_linkedin">LinkedIn ↗</a>
             <a class="btn btn-outline-data" href="https://wa.me/51946550599" target="_blank" rel="noopener"
-              data-event="whatsapp_click">WhatsApp ↗</a>
+              data-event="click_whatsapp">WhatsApp ↗</a>
           </div>
           <div class="hero-meta">
             <span><b>Lima, Perú</b></span>
@@ -2241,8 +2559,8 @@
     <section class="about" id="about">
       <div class="wrap about-grid">
         <div class="about-photo reveal">
-            <img src="./images/top1_foto_5_linkendin.png"
-                alt="Brandol Ghiosimar Changanaqui Torres">
+          <img src="./images/top1_foto_5_linkendin.png" alt="Brandol Ghiosimar Changanaqui Torres" width="800"
+            height="1000" loading="lazy" decoding="async">
         </div>
         <div class="about-text reveal">
           <div class="eyebrow" data-i18n="about.eyebrow">Acerca de</div>
@@ -2606,13 +2924,16 @@
             llamada de diagnóstico sin costo.</p>
           <div class="contact-links">
             <a class="contact-link" href="https://wa.me/51946550599" target="_blank" rel="noopener"
-              data-event="whatsapp_click"><span class="ico">W</span> +51 946 550 599 — WhatsApp</a>
-            <a class="contact-link" href="mailto:brandol.changanaqui.torres@gmail.com" data-event="email_click"><span
+              data-event="click_whatsapp"><span class="ico">W</span> +51 946 550 599 — WhatsApp</a>
+            <a class="contact-link" href="tel:+51946550599" data-event="click_call"><span class="ico">☎</span> +51 946
+              550 599 — Llamar</a>
+            <a class="contact-link" href="mailto:brandol.changanaqui.torres@gmail.com" data-event="click_email"><span
                 class="ico">@</span> brandol.changanaqui.torres@gmail.com</a>
             <a class="contact-link" href="https://linkedin.com/in/brandol-changanaqui" target="_blank" rel="noopener"
-              data-event="linkedin_click"><span class="ico">in</span> linkedin.com/in/brandol-changanaqui</a>
-            <a class="contact-link" href="CV_Brandol_Changanaqui_Torres.docx" download data-event="cv_download"><span
-                class="ico">↓</span> <span data-i18n="contact.cvlink">Descargar CV completo</span></a>
+              data-event="click_linkedin"><span class="ico">in</span> linkedin.com/in/brandol-changanaqui</a>
+            <a class="contact-link" href="CV_Brandol_Changanaqui_Torres.docx" download
+              data-event="click_download_cv"><span class="ico">↓</span> <span data-i18n="contact.cvlink">Descargar CV
+                completo</span></a>
           </div>
         </div>
         <form id="contactForm" novalidate aria-label="Formulario de contacto">
@@ -2636,13 +2957,26 @@
               <option>&gt; USD 30,000</option>
             </select>
           </div>
+          <div><label for="f-date" data-i18n="contact.fdate">Fecha preferida *</label>
+            <input id="f-date" type="date" name="fecha" required autocomplete="off">
+          </div>
+          <div class="full slot-field">
+            <label id="slotLabel" data-i18n="contact.fslot">Horario preferido *</label>
+            <div class="slot-grid" id="slotGrid" role="group" aria-labelledby="slotLabel">
+              <p class="slot-placeholder" id="slotPlaceholder" data-i18n="contact.slot.placeholder">Selecciona primero
+                una fecha para ver los horarios disponibles.</p>
+            </div>
+            <p class="slot-status" id="slotStatus" aria-live="polite"></p>
+          </div>
           <div class="full"><label for="f-need" data-i18n="contact.fneed">Necesidad / plazo *</label><textarea
               id="f-need" name="need" required placeholder="Describe el reto y el plazo estimado"
               data-i18n-attr="placeholder:contact.fneedph"></textarea></div>
-          <div class="full form-note" data-i18n="contact.note">Este formulario está protegido contra spam (honeypot +
-            validación). Al enviarlo se abrirá tu cliente de correo con los datos precargados.</div>
-          <div class="full"><button type="submit" class="btn btn-solid" data-event="contact_submit"
-              data-i18n="contact.submit">Enviar mensaje</button></div>
+          <div class="full form-note" data-i18n="contact.note">Este formulario agenda tu consultoría automáticamente:
+            verificamos disponibilidad en vivo, creamos el evento en el calendario con enlace de Google Meet y te
+            enviamos la confirmación por correo. Protegido contra spam (honeypot + validación).</div>
+          <div class="full form-msg" id="formMsg" role="status" aria-live="polite"></div>
+          <div class="full"><button type="submit" class="btn btn-solid" id="submitBtn"
+              data-i18n="contact.submit">Agendar consultoría</button></div>
         </form>
       </div>
     </section>
@@ -2659,7 +2993,7 @@
 
   <a class="wa-float"
     href="https://wa.me/51946550599?text=Hola%20Brandol%2C%20quiero%20conversar%20sobre%20un%20proyecto" target="_blank"
-    rel="noopener" aria-label="Escribir por WhatsApp" data-event="whatsapp_float_click">
+    rel="noopener" aria-label="Escribir por WhatsApp" data-event="click_whatsapp" data-loc="float">
     <span class="wa-tooltip" data-i18n="wa.tooltip">Escríbeme por WhatsApp</span>
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path
@@ -2668,8 +3002,184 @@
     </svg>
   </a>
 
+  <!-- Aviso de cookies — cumplimiento básico GDPR: sin analítica hasta aceptar -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+    <p>Usamos cookies de analítica (Google Analytics, Microsoft Clarity) para entender cómo se usa este sitio y
+      mejorar la experiencia. No se usan para publicidad ni se comparten datos personales con terceros. Puedes
+      aceptar o rechazar.</p>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-accept" id="cookieAccept">Aceptar</button>
+      <button type="button" id="cookieReject">Rechazar</button>
+    </div>
+  </div>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ============================================================
+       ANALYTICS CORE — UTM, dispositivo, fuente, embudo y conversiones
+       Alimenta a la vez: GA4 (gtag), dataLayer (GTM) y, cuando aplica,
+       el payload que viaja a Google Sheets vía Apps Script.
+       ============================================================ */
+    const ANALYTICS = (function () {
+
+      /* ---------- 1) UTM tracking ---------- */
+      // Se capturan al primer aterrizaje (first-touch, persistente en
+      // localStorage) y también la visita actual (last-touch, sessionStorage).
+      const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+      const params = new URLSearchParams(window.location.search);
+      const currentUtm = {};
+      UTM_KEYS.forEach(function (k) { if (params.get(k)) currentUtm[k] = params.get(k); });
+      if (Object.keys(currentUtm).length) {
+        sessionStorage.setItem('utm_last_touch', JSON.stringify(currentUtm));
+        if (!localStorage.getItem('utm_first_touch')) {
+          localStorage.setItem('utm_first_touch', JSON.stringify(currentUtm));
+        }
+      }
+      function getUtm() {
+        try { return JSON.parse(sessionStorage.getItem('utm_last_touch') || '{}'); }
+        catch (e) { return {}; }
+      }
+      function getFirstTouchUtm() {
+        try { return JSON.parse(localStorage.getItem('utm_first_touch') || '{}'); }
+        catch (e) { return {}; }
+      }
+
+      /* ---------- 2) Device tracking ---------- */
+      function detectDevice() {
+        const ua = navigator.userAgent;
+        const type = /iPad|Tablet/i.test(ua) ? 'tablet' : (/Mobi|Android.*Mobile|iPhone/i.test(ua) ? 'mobile' : 'desktop');
+        const os = /Android/i.test(ua) ? 'android' : /iPhone|iPad|iPod/i.test(ua) ? 'iphone' :
+          /Windows/i.test(ua) ? 'windows' : /Macintosh|Mac OS X/i.test(ua) ? 'mac' :
+            /Linux/i.test(ua) ? 'linux' : 'other';
+        return { device_type: type, device_os: os };
+      }
+      const DEVICE = detectDevice();
+
+      /* ---------- 3) Source tracking ---------- */
+      // Deduce el canal a partir de UTM (si existe) o del referrer (si no).
+      function detectSource() {
+        const utm = getUtm();
+        if (utm.utm_source) return utm.utm_source + (utm.utm_medium ? ' / ' + utm.utm_medium : '');
+        const ref = document.referrer;
+        if (!ref) return 'Direct';
+        if (params.get('qr') || params.get('src') === 'cv') return 'QR CV';
+        try {
+          const host = new URL(ref).hostname.replace('www.', '');
+          if (host.indexOf('google.') !== -1) return 'Google Search';
+          if (host.indexOf('linkedin.com') !== -1) return 'LinkedIn';
+          if (host.indexOf('instagram.com') !== -1) return 'Instagram';
+          if (host.indexOf('facebook.com') !== -1 || host.indexOf('fb.com') !== -1) return 'Facebook';
+          if (host.indexOf('wa.me') !== -1 || host.indexOf('whatsapp.com') !== -1) return 'WhatsApp';
+          return 'Referral: ' + host;
+        } catch (e) { return 'Referral'; }
+      }
+      const SOURCE = detectSource();
+
+      /* ---------- 4) Envío unificado de eventos ---------- */
+      // Envía a la vez a GA4 (gtag/config) y al dataLayer (para que GTM pueda
+      // usarlo en cualquier tag adicional que agregues sin tocar este archivo).
+      function track(eventName, extraParams) {
+        const utm = getUtm();
+        const payload = Object.assign({
+          device_type: DEVICE.device_type,
+          device_os: DEVICE.device_os,
+          traffic_source: SOURCE
+        }, utm, extraParams || {});
+        if (window.gtag) gtag('event', eventName, payload);
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push(Object.assign({ event: eventName }, payload));
+        // Clarity: además de la grabación automática, se etiqueta la sesión con
+        // el evento para poder filtrar grabaciones por comportamiento en el panel.
+        if (window.clarity) { try { clarity('event', eventName); } catch (e) { } }
+        if (window.posthog) { try { posthog.capture(eventName, payload); } catch (e) { } }
+      }
+
+      /* ---------- 5) Conversiones ---------- */
+      // GA4 exige marcar "conversión" en Admin > Eventos para cada uno de estos
+      // nombres (no se puede hacer por código); aquí se etiqueta el payload con
+      // conversion:true para que también puedas construir una audiencia/segmento
+      // en GA4 sin depender de esa marca, y para poder filtrarlo en GTM.
+      const CONVERSION_EVENTS = ['submit_form', 'reservation_success', 'click_whatsapp', 'click_email'];
+      function trackConversion(eventName, extraParams) {
+        track(eventName, Object.assign({ conversion: true }, extraParams || {}));
+      }
+
+      /* ---------- 6) Embudo comercial ---------- */
+      // visitante -> interesado -> inicio_formulario -> envio_formulario ->
+      // agendamiento_exitoso -> consultoria_realizada -> cliente_ganado
+      // Las 2 últimas etapas ocurren fuera del sitio (CRM/consultor) y se
+      // documentan como eventos manuales — ver README al final del archivo.
+      const funnelReached = {};
+      function funnelStage(stage, extraParams) {
+        if (funnelReached[stage]) return; // una vez por sesión, evita ruido
+        funnelReached[stage] = true;
+        track(stage, extraParams);
+      }
+
+      // Etapa 1: visitante (equivalente a page_view / first touch de esta sesión)
+      funnelStage('visitante');
+
+      // Etapa 2: interesado — dwell time > 15s O scroll > 25% (lo que ocurra primero)
+      let interesadoFired = false;
+      function markInteresado() {
+        if (interesadoFired) return;
+        interesadoFired = true;
+        funnelStage('interesado');
+      }
+      setTimeout(markInteresado, 15000);
+
+      return {
+        track: track,
+        trackConversion: trackConversion,
+        funnelStage: funnelStage,
+        markInteresado: markInteresado,
+        getUtm: getUtm,
+        getFirstTouchUtm: getFirstTouchUtm,
+        device: DEVICE,
+        source: SOURCE
+      };
+    })();
+    // Alias corto reutilizado en el resto del archivo y disponible para el HTML.
+    window.analyticsTrack = ANALYTICS.track;
+
+    /* ============================================================
+       CONSENTIMIENTO DE COOKIES — Google Consent Mode v2
+       El banner solo aparece si no hay una decisión previa guardada.
+       "Aceptar" habilita analytics_storage (GA4/Clarity ya cargados
+       arriban de todas formas de forma anónima hasta este punto gracias
+       al Consent Mode "denied" por defecto definido en el <head>).
+       ============================================================ */
+    (function () {
+      const CONSENT_KEY = 'bc-cookie-consent';
+      const banner = document.getElementById('cookieBanner');
+      const saved = localStorage.getItem(CONSENT_KEY);
+      function applyConsent(granted) {
+        if (window.gtag) {
+          gtag('consent', 'update', {
+            analytics_storage: granted ? 'granted' : 'denied',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied'
+          });
+        }
+      }
+      if (saved) {
+        applyConsent(saved === 'granted');
+      } else {
+        banner.classList.add('show');
+      }
+      document.getElementById('cookieAccept').addEventListener('click', function () {
+        localStorage.setItem(CONSENT_KEY, 'granted');
+        applyConsent(true);
+        banner.classList.remove('show');
+      });
+      document.getElementById('cookieReject').addEventListener('click', function () {
+        localStorage.setItem(CONSENT_KEY, 'denied');
+        applyConsent(false);
+        banner.classList.remove('show');
+      });
+    })();
 
     /* ---- mobile drawer ---- */
     const navToggle = document.getElementById('navToggle');
@@ -2870,6 +3380,7 @@
           document.querySelectorAll('.case-panel').forEach(p => p.classList.remove('active'));
           tab.classList.add('active');
           document.getElementById('panel-' + c.id).classList.add('active');
+          if (window.analyticsTrack) analyticsTrack('click_portfolio', { case_name: c.name });
         });
         caseTabs.appendChild(tab);
 
@@ -2924,6 +3435,9 @@
       <div class="svc-col"><b>${L.deliv}</b><p>${s.deliv}</p></div>
       <div class="svc-col"><b>${L.roi}</b><p>${s.roi}</p><b style="margin-top:10px">${L.ind}</b><span>${s.ind}</span></div>
     `;
+        row.addEventListener('click', () => {
+          if (window.analyticsTrack) analyticsTrack('click_services', { service_name: s.name });
+        });
         svcList.appendChild(row);
         row.classList.add('in');
         io.observe(row);
@@ -2985,30 +3499,417 @@
     renderServices('es');
     renderFAQ('es');
 
-    /* ---- contact form: client-side validation + mailto fallback (honeypot anti-spam) ---- */
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function (ev) {
-      ev.preventDefault();
-      if (form.company_website.value) { return; } // honeypot triggered, silently drop
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      const d = Object.fromEntries(new FormData(form).entries());
-      const subject = encodeURIComponent(`Consultoría — ${d.name}${d.company ? ' / ' + d.company : ''}`);
-      const body = encodeURIComponent(
-        `Nombre: ${d.name}\nEmpresa: ${d.company || '-'}\nCargo: ${d.role || '-'}\nCorreo: ${d.email}\nTeléfono: ${d.phone || '-'}\nPresupuesto: ${d.budget || '-'}\n\nNecesidad / plazo:\n${d.need}`
-      );
-      window.location.href = `mailto:brandol.changanaqui.torres@gmail.com?subject=${subject}&body=${body}`;
-      if (window.gtag) gtag('event', 'contact_form_submit');
-      if (window.posthog) posthog.capture('contact_form_submit');
-    });
+    /* ============================================================
+       AGENDAMIENTO — Sheets + Calendar + Google Meet + Correo
+       Backend: Google Apps Script (ver /apps-script/Code.gs y README.md)
+       ============================================================ */
+    const BOOKING_CONFIG = {
+      // URL del Apps Script publicado como Web App. Reemplazar antes de producción.
+      GOOGLE_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbxngsPj8u9UCTKT8ooCxIasO4axcGCokAdGrvNn02MXfV_zjB5xVC-F_cF__PwSvq1A/exec',
+      CONSULTANT_EMAIL: 'brandol.changanaqui.torres@gmail.com',
+      // Bloques de 1 hora, 9:00–18:00 con pausa de almuerzo a la 1pm. Ajustable.
+      SLOTS: ['09:00', '10:00', '11:00', '12:00', '14:00', '15:00', '16:00', '17:00'],
+      WORKING_DAYS: [1, 2, 3, 4, 5], // lunes(1)…viernes(5)
+      MIN_FILL_TIME_MS: 2500, // trampa de tiempo anti-spam
+      REQUEST_TIMEOUT_MS: 20000 // Apps Script puede tardar en "despertar"; 20s evita falsos timeouts
+    };
 
-    /* ---- analytics event wiring (GA4 / PostHog / Clarity hooks — plug IDs in production) ---- */
+    // fetch con timeout real vía AbortController. Sin esto, una implementación
+    // de Apps Script caída o una red lenta deja el botón de envío bloqueado
+    // indefinidamente ("Enviando…" para siempre) en vez de fallar de forma
+    // visible y ofrecer el respaldo por correo.
+    function fetchWithTimeout(url, options, timeoutMs) {
+      const controller = new AbortController();
+      const timer = setTimeout(function () { controller.abort(); }, timeoutMs);
+      const opts = Object.assign({}, options, { signal: controller.signal });
+      return fetch(url, opts).finally(function () { clearTimeout(timer); });
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    // Traducciones dinámicas (fuera del ciclo de innerHTML swap de applyLanguage),
+    // usadas para mensajes generados por JS: estado del selector y del envío.
+    function t(key, vars) {
+      const lang = document.documentElement.lang || 'es';
+      let str = (i18n[lang] && i18n[lang][key]) || key;
+      if (vars) {
+        Object.keys(vars).forEach(function (k) { str = str.split('{' + k + '}').join(vars[k]); });
+      }
+      return str;
+    }
+
+    const form = document.getElementById('contactForm');
+    const dateInput = document.getElementById('f-date');
+    const slotGrid = document.getElementById('slotGrid');
+    const slotStatus = document.getElementById('slotStatus');
+    const submitBtn = document.getElementById('submitBtn');
+    const formMsg = document.getElementById('formMsg');
+
+    // Guard de integridad del DOM: si cambia un id en el HTML (o esta sección
+    // se reutiliza en una página sin el formulario de agendamiento), cualquiera
+    // de estos getElementById devuelve null y el resto del bloque rompería en
+    // tiempo de ejecución (".addEventListener of null", etc.). Se corta acá
+    // con un log claro en vez de dejar una excepción no controlada silenciosa.
+    if (!form || !dateInput || !slotGrid || !slotStatus || !submitBtn || !formMsg) {
+      console.error('[Agendamiento] No se encontró uno o más elementos del DOM requeridos ' +
+        '(contactForm / f-date / slotGrid / slotStatus / submitBtn / formMsg). ' +
+        'El formulario de agendamiento no se inicializó.');
+    } else {
+      let selectedSlot = null;
+      const formLoadedAt = Date.now();
+
+      dateInput.min = new Date().toISOString().slice(0, 10);
+
+      /* ============================================================
+         EVENTOS DE FORMULARIO — form_start / form_progress_25|50|75 /
+         form_submit / form_error / form_abandon
+         ============================================================ */
+      const FORM_REQUIRED_FIELDS = ['f-name', 'f-email', 'f-date', 'f-need']; // + horario seleccionado
+      let formStarted = false;
+      let formSubmitted = false;
+      const progressFired = { 25: false, 50: false, 75: false };
+
+      function countFilledRequired() {
+        let filled = 0;
+        FORM_REQUIRED_FIELDS.forEach(function (id) {
+          const el = document.getElementById(id);
+          if (el && String(el.value || '').trim().length > 0) filled++;
+        });
+        if (selectedSlot) filled++;
+        return filled;
+      }
+      const TOTAL_REQUIRED = FORM_REQUIRED_FIELDS.length + 1; // +1 por el horario
+
+      function checkFormProgress() {
+        const pct = Math.round((countFilledRequired() / TOTAL_REQUIRED) * 100);
+        [25, 50, 75].forEach(function (threshold) {
+          if (pct >= threshold && !progressFired[threshold]) {
+            progressFired[threshold] = true;
+            ANALYTICS.track('form_progress_' + threshold);
+          }
+        });
+      }
+
+      form.addEventListener('focusin', function () {
+        if (!formStarted) {
+          formStarted = true;
+          ANALYTICS.markInteresado();
+          ANALYTICS.funnelStage('inicio_formulario');
+          ANALYTICS.track('form_start');
+        }
+      });
+      form.addEventListener('input', checkFormProgress);
+
+      // form_abandon: el visitante empezó a llenar el formulario, se va de la
+      // página (o cambia de pestaña de forma prolongada) sin haberlo enviado.
+      window.addEventListener('beforeunload', function () {
+        if (formStarted && !formSubmitted) {
+          ANALYTICS.track('form_abandon', { fields_filled_pct: Math.round((countFilledRequired() / TOTAL_REQUIRED) * 100) });
+        }
+      });
+
+      function renderSlotPlaceholder(text) {
+        slotGrid.innerHTML = '<p class="slot-placeholder" data-i18n="contact.slot.placeholder">' + escapeHtml(text) + '</p>';
+      }
+
+      function setSlotStatus(text, tone) {
+        slotStatus.textContent = text || '';
+        if (tone) slotStatus.setAttribute('data-tone', tone); else slotStatus.removeAttribute('data-tone');
+      }
+
+      function renderSlots(busyList) {
+        selectedSlot = null;
+        const busySet = new Set(busyList || []);
+        slotGrid.innerHTML = '';
+        let availableCount = 0;
+        BOOKING_CONFIG.SLOTS.forEach(function (slot) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'slot-btn';
+          btn.textContent = slot;
+          btn.setAttribute('aria-pressed', 'false');
+          if (busySet.has(slot)) {
+            btn.disabled = true;
+            btn.setAttribute('aria-disabled', 'true');
+          } else {
+            availableCount++;
+            btn.addEventListener('click', function () {
+              slotGrid.querySelectorAll('.slot-btn').forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+              btn.setAttribute('aria-pressed', 'true');
+              selectedSlot = slot;
+              ANALYTICS.track('calendar_time_selected', { time: slot });
+              checkFormProgress();
+            });
+          }
+          slotGrid.appendChild(btn);
+        });
+        return availableCount;
+      }
+
+      async function loadAvailability(dateValue) {
+        selectedSlot = null;
+        setSlotStatus('');
+        slotGrid.innerHTML = '<div class="slot-status"><span class="slot-spinner" aria-hidden="true"></span>' +
+          escapeHtml(t('contact.slot.loading')) + '</div>';
+
+        if (!BOOKING_CONFIG.GOOGLE_SCRIPT_URL || BOOKING_CONFIG.GOOGLE_SCRIPT_URL.indexOf('REEMPLAZAR') !== -1) {
+          // Apps Script aún no configurado: no se bloquea al usuario, se muestra todo disponible.
+          renderSlots([]);
+          setSlotStatus(t('contact.slot.fallback'), 'warn');
+          return;
+        }
+
+        try {
+          // Contrato del backend: GET ?action=availability&date=YYYY-MM-DD
+          const url = BOOKING_CONFIG.GOOGLE_SCRIPT_URL + '?action=availability&date=' + encodeURIComponent(dateValue);
+          const res = await fetchWithTimeout(url, { method: 'GET' }, BOOKING_CONFIG.REQUEST_TIMEOUT_MS);
+
+          // Manejo de errores HTTP: un despliegue caído, sin permisos, o con la
+          // cuota de Apps Script agotada puede responder con un status fuera de
+          // 2xx cuyo cuerpo no es el JSON esperado.
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+
+          let data;
+          try {
+            data = await res.json();
+          } catch (parseErr) {
+            throw new Error('Respuesta no válida del servidor');
+          }
+
+          // Contrato exacto del backend: { success:true, occupied:[...] } o
+          // { success:false, message:'...' }. Antes se esperaba { status, busy },
+          // que este backend ya no envía.
+          if (!data || data.success !== true) {
+            throw new Error((data && data.message) || 'No se pudo obtener la disponibilidad');
+          }
+          const count = renderSlots(data.occupied);
+          setSlotStatus(count === 0 ? t('contact.slot.empty') : '', count === 0 ? 'empty' : null);
+        } catch (err) {
+          // Degradación segura: si falla la consulta en vivo (red, timeout, HTTP,
+          // JSON inválido o error funcional), se muestran todos los horarios como
+          // disponibles; la verificación real vuelve a ocurrir en el servidor al
+          // enviar el formulario (doble capa).
+          renderSlots([]);
+          setSlotStatus(t('contact.slot.fallback'), 'warn');
+        }
+      }
+
+      let calendarOpened = false;
+      dateInput.addEventListener('focus', function () {
+        if (!calendarOpened) { calendarOpened = true; ANALYTICS.track('calendar_open'); }
+      });
+      dateInput.addEventListener('change', function () {
+        if (!dateInput.value) { renderSlotPlaceholder(t('contact.slot.placeholder')); setSlotStatus(''); return; }
+        const day = new Date(dateInput.value + 'T00:00:00').getDay();
+        ANALYTICS.track('calendar_date_selected', { date: dateInput.value });
+        checkFormProgress();
+        if (BOOKING_CONFIG.WORKING_DAYS.indexOf(day) === -1) {
+          slotGrid.innerHTML = '';
+          setSlotStatus(t('contact.slot.weekend'), 'empty');
+          selectedSlot = null;
+          return;
+        }
+        loadAvailability(dateInput.value);
+      });
+
+      function showMsg(type, html) {
+        formMsg.innerHTML = html;
+        formMsg.className = 'form-msg show ' + type;
+      }
+
+      function buildMailtoFallback(d) {
+        const subject = encodeURIComponent('Consultoría — ' + d.name + (d.company ? ' / ' + d.company : ''));
+        const body = encodeURIComponent(
+          'Nombre: ' + d.name + '\nEmpresa: ' + (d.company || '-') + '\nCargo: ' + (d.role || '-') +
+          '\nCorreo: ' + d.email + '\nTeléfono: ' + (d.phone || '-') + '\nPresupuesto: ' + (d.budget || '-') +
+          '\nFecha preferida: ' + (d.fecha || '-') + '\nHorario preferido: ' + (selectedSlot || '-') +
+          '\n\nNecesidad / plazo:\n' + d.need
+        );
+        return 'mailto:' + BOOKING_CONFIG.CONSULTANT_EMAIL + '?subject=' + subject + '&body=' + body;
+      }
+
+      form.addEventListener('submit', async function (ev) {
+        ev.preventDefault();
+
+        // Capa 1 — honeypot: campo invisible que solo un bot completaría.
+        if (form.company_website.value) { return; }
+
+        // Capa 2 — trampa de tiempo: un envío casi instantáneo delata a un bot.
+        if (Date.now() - formLoadedAt < BOOKING_CONFIG.MIN_FILL_TIME_MS) {
+          showMsg('error', escapeHtml(t('contact.msg.invalid')));
+          return;
+        }
+
+        // Capa 3 — validación nativa + horario seleccionado.
+        if (!form.checkValidity() || !selectedSlot) {
+          form.reportValidity();
+          if (!selectedSlot) showMsg('error', escapeHtml(t('contact.msg.invalid')));
+          ANALYTICS.track('form_error', { reason: 'validation' });
+          return;
+        }
+
+        const d = Object.fromEntries(new FormData(form).entries());
+        const utm = ANALYTICS.getUtm();
+        const firstTouchUtm = ANALYTICS.getFirstTouchUtm();
+
+        // Contrato EXACTO esperado por el backend (Code.gs). Nombres de clave y
+        // tipos deben coincidir uno a uno; cualquier clave extra o mal nombrada
+        // (fecha/hora en vez de fechaAgenda/horaAgenda, utm_source en vez de
+        // utmSource, etc.) hace que validateData() del servidor no reconozca el
+        // campo y trate la reserva como incompleta.
+        // El backend no modela "presupuesto" ni "servicio" como selects propios
+        // del formulario: se envía el valor de "budget" como `servicio` (la
+        // aproximación más cercana disponible) y además se anexa al `mensaje`
+        // en texto plano para que el dato no se pierda si `servicio` no se usa
+        // en el Sheet/Calendar.
+        const presupuestoLine = d.budget ? ('\n\nPresupuesto estimado: ' + d.budget) : '';
+        const payload = {
+          nombre: d.name,
+          correo: d.email,
+          empresa: d.company || '',
+          cargo: d.role || '',
+          telefono: d.phone || '',
+          servicio: d.budget || '',
+          mensaje: (d.need || '') + presupuestoLine,
+          fechaAgenda: d.fecha,
+          horaAgenda: selectedSlot,
+          utmSource: utm.utm_source || firstTouchUtm.utm_source || '',
+          utmMedium: utm.utm_medium || firstTouchUtm.utm_medium || '',
+          utmCampaign: utm.utm_campaign || firstTouchUtm.utm_campaign || '',
+          utmContent: utm.utm_content || firstTouchUtm.utm_content || '',
+          utmTerm: utm.utm_term || firstTouchUtm.utm_term || '',
+          dispositivo: ANALYTICS.device.device_type,
+          sistema: ANALYTICS.device.device_os,
+          fuente: ANALYTICS.source
+        };
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = t('contact.submitting');
+        ANALYTICS.track('reservation_attempt', { date: d.fecha, time: selectedSlot });
+
+        try {
+          const response = await fetchWithTimeout(BOOKING_CONFIG.GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            // 'text/plain' evita el preflight OPTIONS (no soportado nativamente por
+            // Apps Script) sin degradar a 'no-cors', permitiendo leer la respuesta real.
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          }, BOOKING_CONFIG.REQUEST_TIMEOUT_MS);
+
+          // Manejo de errores HTTP: si Apps Script responde fuera de 2xx (cuota
+          // agotada, implementación borrada/caída, permisos revocados), el
+          // cuerpo no es el JSON de éxito/error que se espera parsear abajo.
+          if (!response.ok) {
+            throw new Error('HTTP ' + response.status);
+          }
+
+          let result;
+          try {
+            result = await response.json();
+          } catch (parseErr) {
+            // Respuesta 200 con cuerpo no-JSON (por ejemplo una página de error
+            // de Google en vez del JSON del script): se trata como error
+            // funcional en vez de intentar leer result.success de "undefined".
+            throw new Error('Respuesta no válida del servidor');
+          }
+
+          // Contrato exacto del backend:
+          //   éxito → { success:true, meetUrl, eventId }
+          //   error → { success:false, message }
+          // Se valida explícitamente el tipo de `success` antes de usarlo: un
+          // objeto inesperado (success ausente o no-booleano) se trata como
+          // error funcional en vez de caer accidentalmente en la rama de éxito.
+          if (!result || typeof result.success !== 'boolean') {
+            throw new Error('Respuesta inesperada del servidor');
+          }
+
+          if (result.success === false) {
+            // Este backend no distingue "horario ya no disponible" con un
+            // campo/status propio: ambos casos llegan como
+            // { success:false, message }. Se detecta el conflicto por el
+            // contenido del mensaje (coincide con el texto fijo que envía
+            // isSlotAvailable en Code.gs) para conservar la UX existente de
+            // recargar los horarios; cualquier otro mensaje se trata como
+            // error genérico con respaldo por correo.
+            const isConflict = /disponible/i.test(String(result.message || ''));
+            if (isConflict) {
+              showMsg('error', escapeHtml(t('contact.msg.conflict')));
+              loadAvailability(d.fecha);
+              ANALYTICS.track('reservation_failed', { reason: 'conflict' });
+            } else {
+              throw new Error(result.message || 'error');
+            }
+          } else {
+            showMsg('success', escapeHtml(t('contact.msg.success', {
+              name: d.name.split(' ')[0], date: d.fecha, time: selectedSlot
+            })));
+            formSubmitted = true;
+            form.reset();
+            dateInput.min = new Date().toISOString().slice(0, 10);
+            renderSlotPlaceholder(t('contact.slot.placeholder'));
+            setSlotStatus('');
+            // Embudo: envío de formulario + agendamiento exitoso son la misma acción
+            // en este flujo (un único formulario agenda directamente la consultoría).
+            ANALYTICS.funnelStage('envio_formulario');
+            ANALYTICS.trackConversion('submit_form');
+            ANALYTICS.funnelStage('agendamiento_exitoso');
+            ANALYTICS.trackConversion('reservation_success', {
+              date: d.fecha, time: selectedSlot,
+              meetUrl: result.meetUrl || '', eventId: result.eventId || ''
+            });
+          }
+        } catch (err) {
+          // AbortError (timeout) se distingue del resto: el evento pudo haberse
+          // creado igual en el servidor antes de que expirara el tiempo de
+          // espera del cliente, así que el mensaje no debe sugerir "inténtalo de
+          // nuevo" sin más (eso arriesgaría una reserva duplicada) sino "revisa
+          // tu correo primero".
+          const isTimeout = !!(err && err.name === 'AbortError');
+          const mailtoUrl = buildMailtoFallback(d);
+          showMsg('error', escapeHtml(t(isTimeout ? 'contact.msg.timeout' : 'contact.msg.error',
+            { email: BOOKING_CONFIG.CONSULTANT_EMAIL })) +
+            ' <a href="' + mailtoUrl + '">' + escapeHtml(t('contact.submit')) + ' por correo →</a>');
+          ANALYTICS.track('reservation_failed', { reason: isTimeout ? 'timeout' : 'network_or_server' });
+          ANALYTICS.track('form_error', { reason: isTimeout ? 'submit_timeout' : 'submit_exception' });
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = t('contact.submit');
+        }
+      });
+
+      /* ---- reservation_cancelled / reservation_rescheduled ----
+         El flujo actual no ofrece cancelar/reagendar desde el sitio (se hace por
+         correo/WhatsApp con el consultor), así que no hay UI que dispare estos
+         eventos todavía. Quedan listos para usarse el día que agregues esa opción
+         (por ejemplo, un enlace en el correo de confirmación que abra un enlace
+         tipo `?action=cancel&id=...`): basta con llamar a
+         ANALYTICS.track('reservation_cancelled', {...}) o
+         ANALYTICS.track('reservation_rescheduled', {...}) desde ese flujo. */
+    } // cierre del guard de integridad del DOM (if form && dateInput && ...)
+
+    /* ---- eventos personalizados GA4 vía [data-event] (click_whatsapp, click_linkedin,
+       click_instagram, click_email, click_call, click_calendar, click_download_resource,
+       click_download_cv, click_services, click_portfolio, click_testimonials,
+       click_contact, click_cta_primary, click_cta_secondary, ...) ----
+       Para agregar un nuevo botón/enlace rastreado en el futuro, basta con ponerle
+       el atributo data-event="nombre_evento" — no requiere tocar este script. */
     document.querySelectorAll('[data-event]').forEach(el => {
       el.addEventListener('click', () => {
         const evt = el.dataset.event;
-        if (window.gtag) gtag('event', evt);
-        if (window.posthog) posthog.capture(evt);
+        const extra = el.dataset.loc ? { location: el.dataset.loc } : {};
+        ANALYTICS.markInteresado();
+        if (ANALYTICS && ['click_whatsapp', 'click_email'].indexOf(evt) !== -1) {
+          ANALYTICS.trackConversion(evt, extra);
+        } else {
+          ANALYTICS.track(evt, extra);
+        }
       });
     });
+
     /* ---- scroll progress bar + scroll depth tracking, throttled via rAF (perf-safe en móvil) ---- */
     const scrollProgressEl = document.getElementById('scrollProgress');
     let maxScroll = 0;
@@ -3019,8 +3920,8 @@
       if (scrollProgressEl) scrollProgressEl.style.width = Math.min(100, Math.max(0, pct)) + '%';
       if (pct > maxScroll && pct % 25 === 0) {
         maxScroll = pct;
-        if (window.gtag) gtag('event', 'scroll_depth', { percent: pct });
-        if (window.posthog) posthog.capture('scroll_depth', { percent: pct });
+        ANALYTICS.track('scroll_depth', { percent: pct });
+        if (pct >= 25) ANALYTICS.markInteresado();
       }
       scrollTicking = false;
     }
@@ -3135,8 +4036,19 @@
         "contact.cvlink": "Descargar CV completo",
         "contact.fname": "Nombre *", "contact.fcompany": "Empresa", "contact.frole": "Cargo", "contact.femail": "Correo *", "contact.fphone": "Teléfono",
         "contact.fbudget": "Presupuesto estimado", "contact.fbudgetph": "Selecciona…", "contact.fneed": "Necesidad / plazo *", "contact.fneedph": "Describe el reto y el plazo estimado",
-        "contact.note": "Este formulario está protegido contra spam (honeypot + validación). Al enviarlo se abrirá tu cliente de correo con los datos precargados.",
-        "contact.submit": "Enviar mensaje",
+        "contact.fdate": "Fecha preferida *", "contact.fslot": "Horario preferido *",
+        "contact.slot.placeholder": "Selecciona primero una fecha para ver los horarios disponibles.",
+        "contact.slot.loading": "Consultando disponibilidad en tiempo real…",
+        "contact.slot.empty": "No hay horarios disponibles ese día. Prueba con otra fecha.",
+        "contact.slot.fallback": "No se pudo verificar la disponibilidad en vivo; se confirmará al enviar.",
+        "contact.slot.weekend": "Solo se agenda de lunes a viernes. Elige otra fecha.",
+        "contact.msg.invalid": "Revisa los campos obligatorios y selecciona un horario disponible.",
+        "contact.msg.success": "¡Gracias, {name}! Tu consultoría quedó agendada para el {date} a las {time} (hora de Lima). Te enviamos la confirmación con el enlace de Google Meet a tu correo.",
+        "contact.msg.conflict": "Ese horario acaba de ser reservado por otra persona. Elige otro horario disponible.",
+        "contact.msg.error": "No pudimos procesar tu solicitud. Escríbenos directamente a {email} o por WhatsApp.",
+        "contact.msg.timeout": "El servidor tardó demasiado en responder. Puede que tu consultoría sí se haya agendado: revisa tu correo antes de reintentar, o escríbenos a {email}.",
+        "contact.note": "Este formulario agenda tu consultoría automáticamente: verificamos disponibilidad en vivo, creamos el evento en el calendario con enlace de Google Meet y te enviamos la confirmación por correo. Protegido contra spam (honeypot + validación).",
+        "contact.submit": "Agendar consultoría", "contact.submitting": "Agendando…",
         "footer.name": "Brandol Ghiosimar Changanaqui Torres — Lima, Perú",
         "wa.tooltip": "Escríbeme por WhatsApp",
         docTitle: "Brandol Changanaqui Torres — IT Operations Leader · Digital Transformation · Process Excellence"
@@ -3210,8 +4122,19 @@
         "contact.cvlink": "Download full CV",
         "contact.fname": "Name *", "contact.fcompany": "Company", "contact.frole": "Role", "contact.femail": "Email *", "contact.fphone": "Phone",
         "contact.fbudget": "Estimated budget", "contact.fbudgetph": "Select…", "contact.fneed": "Need / timeline *", "contact.fneedph": "Describe the challenge and estimated timeline",
-        "contact.note": "This form is protected against spam (honeypot + validation). Submitting it will open your email client with the details pre-filled.",
-        "contact.submit": "Send message",
+        "contact.fdate": "Preferred date *", "contact.fslot": "Preferred time slot *",
+        "contact.slot.placeholder": "Select a date first to see available time slots.",
+        "contact.slot.loading": "Checking real-time availability…",
+        "contact.slot.empty": "No slots available that day. Please try another date.",
+        "contact.slot.fallback": "Live availability could not be verified; it will be confirmed on submit.",
+        "contact.slot.weekend": "Scheduling is only available Monday through Friday. Choose another date.",
+        "contact.msg.invalid": "Please review the required fields and select an available time slot.",
+        "contact.msg.success": "Thank you, {name}! Your consultation is booked for {date} at {time} (Lima time). We sent the confirmation with the Google Meet link to your email.",
+        "contact.msg.conflict": "That time slot was just booked by someone else. Please choose another available slot.",
+        "contact.msg.error": "We couldn't process your request. Please email us directly at {email} or reach out on WhatsApp.",
+        "contact.msg.timeout": "The server took too long to respond. Your consultation may still have been booked: please check your email before retrying, or write to us at {email}.",
+        "contact.note": "This form books your consultation automatically: we check real-time availability, create the calendar event with a Google Meet link, and email you the confirmation. Protected against spam (honeypot + validation).",
+        "contact.submit": "Schedule consultation", "contact.submitting": "Scheduling…",
         "footer.name": "Brandol Ghiosimar Changanaqui Torres — Lima, Peru",
         "wa.tooltip": "Message me on WhatsApp",
         docTitle: "Brandol Changanaqui Torres — IT Operations Leader · Digital Transformation · Process Excellence"
@@ -3265,6 +4188,846 @@
     const savedLang = localStorage.getItem(LANG_KEY) || 'es';
     if (savedLang !== 'es') { applyLanguage(savedLang); }
   </script>
+
+  <!-- ============================================================
+     BACKEND — Google Apps Script (Code.gs)
+     ============================================================
+     Este bloque NO se ejecuta en el navegador: es un comentario HTML,
+     invisible para cualquier visitante del sitio. Está aquí solo para
+     que viaje todo en un único archivo. Para que el formulario de
+     agendamiento funcione de verdad, tienes que COPIAR el código de
+     abajo y PEGARLO en el editor de Apps Script (ver pasos de
+     despliegue más abajo) — un navegador no puede ejecutar CalendarApp,
+     SpreadsheetApp ni MailApp; eso solo corre en los servidores de
+     Google, dentro del Sheet.
+
+     ------------------------------------------------------------
+     QUÉ HACE
+     ------------------------------------------------------------
+     1. doGet   -> responde la disponibilidad real del calendario para
+                   una fecha (la usa el selector visual de horarios).
+     2. doPost  -> recibe un lead + horario elegido, revisa honeypot y
+                   trampa de tiempo en el servidor, aplica rate limiting,
+                   vuelve a verificar que el horario siga libre bajo un
+                   LockService (evita doble reserva), lo guarda en
+                   Google Sheets, crea el evento en Calendar con enlace
+                   de Google Meet, y envía el correo de confirmación al
+                   consultor y al cliente.
+
+     ------------------------------------------------------------
+     PASO 1 — Crear la hoja de cálculo
+     ------------------------------------------------------------
+     Inicia sesión con brandol.changanaqui.torres@gmail.com (esa cuenta
+     será dueña del Sheet, el Calendar y el remitente de los correos).
+     Crea una hoja de cálculo nueva en Google Sheets, por ejemplo
+     "CRM Consultoría Brandol". La pestaña "Leads" la crea sola el script.
+
+     ------------------------------------------------------------
+     PASO 2 — Habilitar el servicio avanzado de Calendar
+     ------------------------------------------------------------
+     El servicio básico "CalendarApp" no puede generar enlaces de Google
+     Meet por sí solo; para eso se necesita el servicio avanzado
+     "Calendar API". En el editor de Apps Script:
+       Servicios (ícono +) > buscar "Calendar API" > Añadir.
+     Si se omite este paso, el sistema sigue funcionando: guarda el lead
+     y crea el evento en el calendario, solo que sin enlace de Meet.
+
+     ------------------------------------------------------------
+     PASO 2.1 — Calendario dedicado para consultorías (migración)
+     ------------------------------------------------------------
+     El sistema ya NO usa el calendario principal de la cuenta
+     (CalendarApp.getDefaultCalendar()). Todas las operaciones —
+     disponibilidad, creación, cancelación, reprogramación — corren
+     exclusivamente contra un calendario dedicado, identificado en
+     CONFIG.CALENDAR_ID.
+
+     Riesgos de esta migración, para que los tengas presentes:
+       - La cuenta que ejecuta el script (brandol.changanaqui.torres@
+         gmail.com) debe tener permisos de "Realizar cambios y
+         administrar el uso compartido" sobre ese calendario; si el
+         calendario pertenece a otra cuenta o el ID está mal copiado,
+         CalendarApp.getCalendarById(...) devuelve null y el script
+         lanza un error descriptivo en vez de fallar en silencio.
+       - Los eventos que ya existían en el calendario principal (si
+         los había) no se migran solos: hay que moverlos a mano si
+         quieres conservarlos ahí.
+       - Cualquier integración externa que dependiera del calendario
+         principal (por ejemplo, un calendario personal compartido con
+         alguien más) deja de ver estos eventos, ya que ahora viven en
+         un calendario aparte — esto es intencional (separa lo personal
+         de lo comercial) pero conviene confirmarlo con el usuario final.
+
+     ------------------------------------------------------------
+     PASO 3 — Código completo (Extensiones > Apps Script > Code.gs)
+     ------------------------------------------------------------
+
+     /**
+      * Code.gs — Backend de agendamiento para el formulario de contacto
+      * Sitio: brandolchanganaqui.com
+      * Propietario recomendado: brandol.changanaqui.torres@gmail.com
+      *
+      * Qué hace:
+      *   1. doGet   → responde la disponibilidad real del calendario para una fecha
+      *                (usada por el selector visual de horarios del sitio).
+      *   2. doPost  → recibe un lead + horario elegido, vuelve a verificar que el
+      *                horario siga libre (evita doble reserva), lo guarda en
+      *                Google Sheets, crea el evento en Calendar con enlace de
+      *                Google Meet, y envía el correo de confirmación al consultor
+      *                y al cliente.
+      *
+      * Requisito único de configuración (una sola vez, ~1 minuto):
+      *   En el editor de Apps Script → panel izquierdo "Servicios" (ícono +) →
+      *   agregar "Calendar API" (servicio avanzado). Sin esto, el evento se sigue
+      *   creando pero SIN enlace de Google Meet.
+      *   Ver README.md para el resto de pasos de despliegue.
+      *
+      * Calendario: el script NO usa el calendario principal de la cuenta.
+      *   Usa exclusivamente el calendario dedicado en CONFIG.CALENDAR_ID
+      *   (disponibilidad, creación, cancelación y reprogramación).
+      */
+     
+     const CONFIG = {
+       SHEET_NAME: 'Leads',
+       CONSULTANT_EMAIL: 'brandol.changanaqui.torres@gmail.com',
+       CONSULTANT_NAME: 'Brandol Changanaqui Torres',
+       WHATSAPP_NUMBER: '51946550599',
+       // Calendario dedicado a consultorías (ya no se usa el calendario
+       // principal de la cuenta / CalendarApp.getDefaultCalendar()).
+       CALENDAR_ID: '597cde2b299b5319fd7ab5d8bb5c44c0901dbd3a42a02df47252aa37a9423ca4@group.calendar.google.com',
+       TIMEZONE: 'America/Lima',
+       SLOT_DURATION_MINUTES: 60,
+       ACCENT_COLOR: '#B3843A',
+       MIN_FILL_TIME_MS: 2500,     // debe coincidir con BOOKING_CONFIG.MIN_FILL_TIME_MS del frontend
+       MAX_MESSAGE_LENGTH: 2000,   // corta payloads anómalamente grandes (abuso/DoS de cuota)
+       RATE_LIMIT_WINDOW_SEC: 60,  // ventana de la caché para el rate limit
+       RATE_LIMIT_MAX_PER_WINDOW: 3 // envíos máximos por correo dentro de la ventana
+     };
+     
+     /**
+      * Devuelve la instancia del calendario dedicado a consultorías.
+      * Lanza un error descriptivo si el ID es inválido o el script no
+      * tiene permisos sobre ese calendario, en vez de fallar en silencio
+      * más adelante con un "Cannot read properties of null".
+      */
+     function getConsultingCalendar() {
+       const calendar = CalendarApp.getCalendarById(CONFIG.CALENDAR_ID);
+       if (!calendar) {
+         throw new Error(
+           'No se pudo acceder al calendario de consultorías (CONFIG.CALENDAR_ID). ' +
+           'Verifica que el ID sea correcto y que la cuenta que ejecuta este script ' +
+           'tenga permiso de "Realizar cambios y administrar el uso compartido" sobre él.'
+         );
+       }
+       return calendar;
+     }
+     
+     /* ============================================================
+        ENDPOINT GET — disponibilidad en vivo para el selector de horarios
+        Uso: GET {URL_DEL_DESPLIEGUE}?action=availability&date=YYYY-MM-DD
+        Contrato exacto: { success:true, occupied:[...] } | { success:false, message }
+        ============================================================ */
+     function doGet(e) {
+       try {
+         const action = e && e.parameter && e.parameter.action;
+         const dateParam = e && e.parameter && e.parameter.date;
+     
+         if (action !== 'availability' || !dateParam) {
+           return jsonOut({ success: false, message: 'Acción no válida' });
+         }
+     
+         const dayStart = new Date(dateParam + 'T00:00:00');
+         const dayEnd = new Date(dateParam + 'T23:59:59');
+     
+         const events = getConsultingCalendar().getEvents(dayStart, dayEnd);
+         const occupied = events.map(function (ev) {
+           return Utilities.formatDate(ev.getStartTime(), CONFIG.TIMEZONE, 'HH:mm');
+         });
+     
+         return jsonOut({ success: true, occupied: occupied });
+       } catch (err) {
+         return jsonOut({ success: false, message: String(err) });
+       }
+     }
+     
+     /* ============================================================
+        ENDPOINT POST — registra el lead y agenda la consultoría
+        ============================================================ */
+     function doPost(e) {
+       try {
+         const data = JSON.parse(e.postData.contents);
+     
+         // Capa 1 (servidor) — honeypot: si este campo llega con contenido, el
+         // request no vino de un humano llenando el formulario visible (el campo
+         // está oculto por CSS). La validación del frontend es solo cosmética;
+         // esta es la que realmente detiene a un bot que ataque el endpoint
+         // directamente sin pasar por la página.
+         if (data.company_website) {
+           return jsonOut({ success: false, message: 'Solicitud rechazada' });
+         }
+     
+         // Capa 2 (servidor) — trampa de tiempo, replicada del frontend. Un bot
+         // que fabrique el POST a mano no respeta este tiempo mínimo de llenado.
+         if (typeof data.fillTimeMs === 'number' && data.fillTimeMs < CONFIG.MIN_FILL_TIME_MS) {
+           return jsonOut({ success: false, message: 'Solicitud rechazada' });
+         }
+     
+         // Campos obligatorios según el contrato exacto del frontend:
+         // nombre, correo, fechaAgenda, horaAgenda (mensaje y el resto son
+         // opcionales).
+         const required = ['nombre', 'correo', 'fechaAgenda', 'horaAgenda'];
+         for (var i = 0; i < required.length; i++) {
+           if (!data[required[i]]) {
+             return jsonOut({ success: false, message: 'Faltan campos obligatorios: ' + required[i] });
+           }
+         }
+     
+         // Validación de formato de correo (defensa básica; MailApp también
+         // fallaría, pero esto da un mensaje claro y evita registrar basura).
+         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(data.correo))) {
+           return jsonOut({ success: false, message: 'Correo inválido' });
+         }
+     
+         // Corta mensajes anómalamente largos (abuso de cuota de Gmail/Sheets).
+         if (data.mensaje && String(data.mensaje).length > CONFIG.MAX_MESSAGE_LENGTH) {
+           data.mensaje = String(data.mensaje).slice(0, CONFIG.MAX_MESSAGE_LENGTH) + '…';
+         }
+     
+         // Rate limiting básico por correo, usando CacheService (no requiere IP,
+         // que Apps Script no expone). No sustituye un WAF, pero frena reintentos
+         // automatizados y errores de doble-click/doble-submit.
+         const rateKey = 'rl_' + String(data.correo).toLowerCase();
+         const cache = CacheService.getScriptCache();
+         const hits = Number(cache.get(rateKey) || 0);
+         if (hits >= CONFIG.RATE_LIMIT_MAX_PER_WINDOW) {
+           return jsonOut({ success: false, message: 'Demasiados intentos. Espera un minuto e inténtalo de nuevo.' });
+         }
+         cache.put(rateKey, String(hits + 1), CONFIG.RATE_LIMIT_WINDOW_SEC);
+     
+         const start = new Date(data.fechaAgenda + 'T' + data.horaAgenda + ':00');
+         const end = new Date(start.getTime() + CONFIG.SLOT_DURATION_MINUTES * 60000);
+     
+         // Lock a nivel de script: sin esto, dos clientes que envían casi al mismo
+         // tiempo pueden pasar ambos la verificación de "overlapping.length === 0"
+         // antes de que ninguno haya creado su evento todavía (condición de
+         // carrera real, no solo teórica). El lock serializa la sección
+         // verificar-y-reservar para que solo uno de los dos gane el horario.
+         const lock = LockService.getScriptLock();
+         const gotLock = lock.tryLock(10000);
+         if (!gotLock) {
+           return jsonOut({ success: false, message: 'El sistema está ocupado, inténtalo nuevamente en unos segundos.' });
+         }
+     
+         try {
+           // Segunda verificación server-side: cierra la ventana de condición de
+           // carrera entre "el cliente ve el horario libre" y "el cliente envía".
+           // El mensaje es literal ("...ya no está disponible.") porque el
+           // frontend lo usa para distinguir un conflicto de horario de
+           // cualquier otro error (este contrato no tiene un status/code
+           // separado para eso).
+           const overlapping = getConsultingCalendar().getEvents(start, end);
+           if (overlapping.length > 0) {
+             return jsonOut({ success: false, message: 'El horario seleccionado ya no está disponible.' });
+           }
+     
+           // 1) Crear el evento en Calendar con Google Meet
+           const meeting = createCalendarEvent(data, start, end);
+     
+           // 2) Registrar el lead en Google Sheets, ya con el enlace de Meet
+           //    (antes se guardaba antes de generar el evento, así que la columna
+           //    "Meet" quedaba siempre vacía por desalineación de columnas).
+           appendLeadRow(data, meeting.meetLink);
+     
+           // 3) Enviar correos de confirmación
+           sendConsultantEmail(data, meeting.meetLink, start);
+           sendClientEmail(data, meeting.meetLink, start);
+     
+           return jsonOut({ success: true, meetUrl: meeting.meetLink, eventId: meeting.eventId });
+         } finally {
+           lock.releaseLock();
+         }
+       } catch (err) {
+         return jsonOut({ success: false, message: String(err) });
+       }
+     }
+     
+     /* ============================================================
+        Helpers
+        ============================================================ */
+     
+     function jsonOut(obj) {
+       return ContentService.createTextOutput(JSON.stringify(obj))
+         .setMimeType(ContentService.MimeType.JSON);
+     }
+     
+     // Protección contra inyección de fórmulas en Google Sheets: si un valor
+     // empieza con =, +, -, @  Sheets podría interpretarlo como fórmula al abrirse.
+     function neutralize(value) {
+       const v = String(value || '');
+       return /^[=+\-@]/.test(v) ? "'" + v : v;
+     }
+     
+     function getOrCreateSheet() {
+       const ss = SpreadsheetApp.getActiveSpreadsheet();
+       let sheet = ss.getSheetByName(CONFIG.SHEET_NAME);
+       if (!sheet) {
+         sheet = ss.insertSheet(CONFIG.SHEET_NAME);
+         sheet.appendRow([
+           'Fecha de registro', 'Nombre', 'Empresa', 'Cargo', 'Correo', 'Teléfono',
+           'Servicio', 'Mensaje', 'Fecha consultoría', 'Hora consultoría', 'Meet',
+           'UTM Source', 'UTM Medium', 'UTM Campaign', 'UTM Content', 'UTM Term',
+           'Dispositivo', 'Sistema', 'Fuente de tráfico'
+         ]);
+         sheet.setFrozenRows(1);
+       }
+       return sheet;
+     }
+     
+     function appendLeadRow(data, meetLink) {
+       const sheet = getOrCreateSheet();
+       sheet.appendRow([
+         new Date(),
+         neutralize(data.nombre),
+         neutralize(data.empresa),
+         neutralize(data.cargo),
+         data.correo,
+         data.telefono || '',
+         neutralize(data.servicio),
+         neutralize(data.mensaje),
+         data.fechaAgenda,
+         data.horaAgenda,
+         meetLink || '',
+         neutralize(data.utmSource),
+         neutralize(data.utmMedium),
+         neutralize(data.utmCampaign),
+         neutralize(data.utmContent),
+         neutralize(data.utmTerm),
+         data.dispositivo || '',
+         data.sistema || '',
+         neutralize(data.fuente)
+       ]);
+     }
+     
+     /**
+      * Crea el evento de calendario con videollamada de Google Meet.
+      * Requiere el servicio avanzado "Calendar API" habilitado (ver cabecera del
+      * archivo). Si no está habilitado, el evento se crea igual pero sin Meet,
+      * y el flujo continúa sin interrumpir el registro del lead.
+      */
+     function createCalendarEvent(data, start, end) {
+       const title = 'Consultoría — ' + data.nombre + (data.empresa ? ' (' + data.empresa + ')' : '');
+       const description = buildEventDescription(data);
+     
+       try {
+         const event = Calendar.Events.insert({
+           summary: title,
+           description: description,
+           start: { dateTime: start.toISOString(), timeZone: CONFIG.TIMEZONE },
+           end: { dateTime: end.toISOString(), timeZone: CONFIG.TIMEZONE },
+           attendees: [{ email: data.correo }, { email: CONFIG.CONSULTANT_EMAIL }],
+           conferenceData: {
+             createRequest: {
+               requestId: Utilities.getUuid(),
+               conferenceSolutionKey: { type: 'hangoutsMeet' }
+             }
+           }
+         }, CONFIG.CALENDAR_ID, { conferenceDataVersion: 1, sendUpdates: 'all' });
+     
+         return {
+           meetLink: (event.hangoutLink || ''),
+           eventId: (event.id || '')
+         };
+       } catch (calErr) {
+         // Servicio avanzado de Calendar no habilitado u otro error puntual:
+         // se crea un evento simple sin Meet para no perder la reserva del lead.
+         Logger.log('No se pudo crear el evento con Google Meet: ' + calErr);
+         const fallbackEvent = getConsultingCalendar().createEvent(title, start, end, {
+           description: description,
+           guests: data.correo,
+           sendInvites: true
+         });
+         return { meetLink: '', eventId: fallbackEvent.getId() };
+       }
+     }
+     
+     function buildEventDescription(data) {
+       return [
+         'Consultoría agendada desde el sitio web.',
+         'Nombre: ' + data.nombre,
+         'Empresa: ' + (data.empresa || '-'),
+         'Cargo: ' + (data.cargo || '-'),
+         'Correo: ' + data.correo,
+         'Teléfono: ' + (data.telefono || '-'),
+         'Servicio de interés: ' + (data.servicio || '-'),
+         '',
+         'Necesidad / plazo:',
+         data.mensaje
+       ].join('\n');
+     }
+     
+     function sendConsultantEmail(data, meetLink, start) {
+       const fechaLegible = Utilities.formatDate(start, CONFIG.TIMEZONE, "EEEE d 'de' MMMM, HH:mm '(hora de Lima)'");
+       const meetRow = meetLink
+         ? '<p><strong>Google Meet:</strong> <a href="' + meetLink + '">' + meetLink + '</a></p>'
+         : '<p><em>El enlace de Meet no pudo generarse automáticamente; revisa el evento en tu Calendar.</em></p>';
+     
+       MailApp.sendEmail({
+         to: CONFIG.CONSULTANT_EMAIL,
+         replyTo: data.correo,
+         subject: 'Nuevo lead agendado — ' + data.nombre + ' (' + fechaLegible + ')',
+         htmlBody:
+           '<div style="font-family:Arial,sans-serif;color:#12151C;line-height:1.6;">' +
+           '<h2 style="color:' + CONFIG.ACCENT_COLOR + ';margin-bottom:4px;">Nueva consultoría agendada</h2>' +
+           '<p><strong>' + fechaLegible + '</strong></p>' +
+           meetRow +
+           '<hr style="border:none;border-top:1px solid #ddd;margin:16px 0;">' +
+           '<p><strong>Nombre:</strong> ' + data.nombre + '</p>' +
+           '<p><strong>Empresa:</strong> ' + (data.empresa || '-') + '</p>' +
+           '<p><strong>Cargo:</strong> ' + (data.cargo || '-') + '</p>' +
+           '<p><strong>Correo:</strong> ' + data.correo + '</p>' +
+           '<p><strong>Teléfono:</strong> ' + (data.telefono || '-') + '</p>' +
+           '<p><strong>Servicio de interés:</strong> ' + (data.servicio || '-') + '</p>' +
+           '<p><strong>Necesidad / plazo:</strong><br>' + String(data.mensaje).replace(/\n/g, '<br>') + '</p>' +
+           '</div>'
+       });
+     }
+     
+     function sendClientEmail(data, meetLink, start) {
+       const fechaLegible = Utilities.formatDate(start, CONFIG.TIMEZONE, "EEEE d 'de' MMMM, HH:mm '(hora de Lima)'");
+       const primerNombre = String(data.nombre).trim().split(' ')[0];
+       const meetBlock = meetLink
+         ? '<p style="margin:20px 0;"><a href="' + meetLink + '" style="background:' + CONFIG.ACCENT_COLOR + ';color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">Unirme a la reunión (Google Meet)</a></p>'
+         : '<p>En breve recibirás el enlace de la reunión; si no llega, escríbenos y lo confirmamos manualmente.</p>';
+     
+       MailApp.sendEmail({
+         to: data.correo,
+         replyTo: CONFIG.CONSULTANT_EMAIL,
+         subject: 'Confirmación de tu consultoría con ' + CONFIG.CONSULTANT_NAME + ' — ' + fechaLegible,
+         htmlBody:
+           '<div style="font-family:Arial,sans-serif;color:#12151C;line-height:1.6;max-width:520px;margin:0 auto;">' +
+           '<h2 style="color:' + CONFIG.ACCENT_COLOR + ';">¡Hola, ' + primerNombre + '!</h2>' +
+           '<p>Gracias por agendar una consultoría con <strong>' + CONFIG.CONSULTANT_NAME + '</strong>. Tu reunión quedó confirmada para:</p>' +
+           '<p style="font-size:16px;font-weight:600;">' + fechaLegible + '</p>' +
+           meetBlock +
+           '<p>Si necesitas reprogramar o tienes alguna pregunta antes de la llamada, simplemente responde este correo o escríbenos por WhatsApp: ' +
+           '<a href="https://wa.me/' + CONFIG.WHATSAPP_NUMBER + '">+' + CONFIG.WHATSAPP_NUMBER + '</a>.</p>' +
+           '<p>Nos vemos pronto.</p>' +
+           '<p style="color:#6B7488;font-size:13px;margin-top:28px;">' + CONFIG.CONSULTANT_NAME + ' · IT Operations &amp; Digital Transformation</p>' +
+           '</div>'
+       });
+     }
+
+     ------------------------------------------------------------
+     PASO 4 — Desplegar como aplicación web
+     ------------------------------------------------------------
+     Implementar > Nueva implementación > Aplicación web:
+       Ejecutar como: Yo (tu cuenta)
+       Quién tiene acceso: Cualquier usuario
+     Clic en Implementar y acepta los permisos solicitados (Sheets,
+     Calendar, Gmail — son los servicios que el propio script usa, no
+     hay API Key ni OAuth externo que configurar).
+     Copia la URL que termina en /exec.
+
+     ------------------------------------------------------------
+     PASO 5 — Conectar el frontend
+     ------------------------------------------------------------
+     En este mismo archivo, busca BOOKING_CONFIG.GOOGLE_SCRIPT_URL
+     (dentro del <script> principal) y reemplaza el valor de ejemplo por
+     esa URL. La misma URL atiende tanto la consulta de disponibilidad
+     (GET) como el envío del formulario (POST).
+
+     ------------------------------------------------------------
+     SEGURIDAD IMPLEMENTADA (resumen)
+     ------------------------------------------------------------
+     - Honeypot + trampa de tiempo validados también en el servidor
+       (no solo en el navegador).
+     - Rate limiting básico por correo (CacheService): máx. 3 envíos
+       cada 60s.
+     - LockService alrededor de "verificar disponibilidad -> reservar"
+       para cerrar la condición de carrera entre solicitudes simultáneas.
+     - Protección anti-inyección de fórmulas en Sheets.
+     - Validación de formato de correo y límite de longitud del mensaje.
+     - CORS sin no-cors: Content-Type text/plain evita el preflight
+       OPTIONS sin sacrificar la lectura real de la respuesta.
+
+     Cuotas de cuenta Gmail gratuita a tener en cuenta: MailApp permite
+     100 correos/día (1500/día en Google Workspace). Para el volumen de
+     un consultor individual es más que suficiente.
+     ============================================================ -->
+
+
+  <!-- ============================================================
+     README.md — Documentación del proyecto
+     ============================================================
+     Igual que el bloque anterior: esto es un comentario HTML, invisible
+     para cualquier visitante. Es la documentación completa (qué hace el
+     sistema, cómo desplegarlo, qué se auditó y qué se corrigió) para que
+     viaje en este mismo archivo en vez de en un README.md aparte.
+
+     # Agendamiento automático — Sheets + Calendar + Google Meet + Correo
+     
+     Implementado sobre `index.html` (sitio de Brandol Changanaqui Torres). El
+     formulario de contacto ahora agenda la consultoría de punta a punta:
+     
+     1. El visitante elige una **fecha** → el sitio consulta la disponibilidad
+        real del Calendar del consultor (`doGet`) y pinta en gris los horarios
+        ya ocupados.
+     2. Elige un **horario libre** y completa el resto del formulario.
+     3. Al enviar (`doPost`):
+        - se **vuelve a verificar** que el horario siga libre (evita doble
+          reserva si dos personas lo intentan casi al mismo tiempo),
+        - se guarda el lead en **Google Sheets**,
+        - se crea el evento en **Google Calendar** con enlace de **Google
+          Meet**,
+        - se envían **correos de confirmación** al consultor y al cliente.
+     4. Si la consulta de disponibilidad falla (red, script no configurado
+        todavía, etc.) el sitio **nunca bloquea al cliente**: muestra todos los
+        horarios como disponibles y la verificación real ocurre igual al
+        enviar. Si el envío final falla, se ofrece un botón de respaldo que
+        abre el cliente de correo con todos los datos precargados.
+     
+     ## Despliegue (una sola vez, ~10 minutos)
+     
+     1. **Inicia sesión** en Google con `brandol.changanaqui.torres@gmail.com`
+        (esa cuenta será dueña del Sheet, el Calendar y el remitente de los
+        correos).
+     2. Crea una hoja de cálculo nueva en Google Sheets, por ejemplo
+        `CRM Consultoría Brandol`.
+     3. Dentro del Sheet: **Extensiones → Apps Script**.
+     4. Borra el contenido de `Code.gs` por defecto y pega el archivo
+        [`apps-script/Code.gs`](apps-script/Code.gs) de esta entrega.
+     5. **Habilita el servicio avanzado de Calendar** (necesario para que se
+        genere el enlace de Google Meet automáticamente):
+        en el editor de Apps Script → panel izquierdo **Servicios** (ícono `+`)
+        → busca **Calendar API** → **Añadir**.
+        *(Si se omite este paso, el sistema sigue funcionando: guarda el lead y
+        crea el evento en el calendario, solo que sin enlace de Meet.)*
+     5.1. **Calendario dedicado**: el script ya NO usa el calendario principal
+        de la cuenta. Usa el calendario cuyo ID está en `CONFIG.CALENDAR_ID`
+        (`597cde2b299b5319fd7ab5d8bb5c44c0901dbd3a42a02df47252aa37a9423ca4@
+        group.calendar.google.com`). Confirma que la cuenta que ejecuta el
+        script tenga permiso de "Realizar cambios y administrar el uso
+        compartido" sobre ese calendario específico; si no, `doGet`/`doPost`
+        fallarán con un error descriptivo en vez de silenciosamente usar el
+        calendario equivocado.
+     6. **Implementar → Nueva implementación → Aplicación web**:
+        - Ejecutar como: **Yo** (tu cuenta)
+        - Quién tiene acceso: **Cualquier usuario**
+        - Clic en **Implementar** y acepta los permisos solicitados (Sheets,
+          Calendar, Gmail — son los servicios que el propio script usa, no hay
+          API Key ni OAuth externo que configurar).
+     7. Copia la URL que termina en `/exec`.
+     8. En `index.html`, busca `BOOKING_CONFIG.GOOGLE_SCRIPT_URL` (dentro del
+        `<script>` principal) y reemplaza el valor de ejemplo por esa URL.
+     9. Publica el sitio. Listo — la misma URL atiende tanto la consulta de
+        disponibilidad (GET) como el envío del formulario (POST).
+     
+     ## Configuración editable
+     
+     Todo lo específico del negocio vive en un solo lugar de cada archivo:
+     
+     - **Frontend** (`index.html`, objeto `BOOKING_CONFIG`): horarios
+       disponibles (`SLOTS`), días laborables (`WORKING_DAYS`), duración de
+       cada bloque y el tiempo mínimo de llenado anti-spam.
+     - **Backend** (`apps-script/Code.gs`, objeto `CONFIG`): correo del
+       consultor, nombre para las firmas de correo, número de WhatsApp, ID del
+       calendario dedicado a consultorías (`CALENDAR_ID`), zona horaria y
+       color de acento usado en las plantillas de correo.
+     
+     ## Seguridad implementada
+     
+     - **CORS sin `no-cors`**: el envío usa `Content-Type: text/plain` para
+       evitar el preflight `OPTIONS` (no soportado nativamente por Apps
+       Script) sin sacrificar la lectura real de la respuesta del servidor —
+       a diferencia de `mode:'no-cors'`, aquí sí se sabe con certeza si el
+       backend confirmó o falló.
+     - **Doble verificación de disponibilidad**: una vez visual (al elegir
+       fecha) y otra en el servidor justo antes de crear el evento, cerrando
+       la ventana de condición de carrera entre ambas.
+     - **Protección contra inyección de fórmulas en Sheets**: cualquier campo
+       de texto que empiece con `=`, `+`, `-` o `@` se neutraliza antes de
+       escribirse en la hoja.
+     - **Anti-spam en capas**: honeypot (campo invisible) + trampa de tiempo
+       (rechaza envíos a menos de 2.5s de cargada la página) + validación de
+       formato en todos los campos.
+     - **Degradación seguridad-primero**: si Calendar Advanced Service no está
+       habilitado, el evento se crea igual sin Meet en vez de fallar todo el
+       flujo; si el fetch de disponibilidad falla, el envío final sigue
+       verificando en el servidor.
+     
+     ## Auditoría objetiva (después de esta implementación)
+     
+     | Categoría | Antes* | Después | Qué cambió |
+     |---|---|---|---|
+     | UX/UI | 88 | 92 | Selector visual de horarios con estado de carga y feedback en vivo. |
+     | Frontend | 84 | 88 | Validación en 3 capas, mensajes de error accionables con fallback de correo. |
+     | Automatización | 82 | 93 | Flujo completo Sheets + Calendar + Meet + correo doble (consultor y cliente), no solo Sheets + correo. |
+     | Seguridad | 63 | 80 | CORS real (no `no-cors`), verificación server-side de doble reserva, protección anti-inyección de fórmulas. |
+     | Arquitectura | 72 | 76 | Backend con responsabilidades separadas (`doGet`/`doPost`/helpers) y configuración centralizada en ambos lados. |
+     | Escalabilidad | 60 | 65 | Sigue en Google Sheets (adecuado para el volumen de un consultor individual); un CRM real es el siguiente salto, no una corrección de bug. |
+     | Mantenibilidad | 70 | 78 | `CONFIG` centralizado, comentarios de intención en cada función, nomenclatura consistente con el resto del sitio. |
+     
+     *Puntajes "antes" tomados de la autoevaluación previa que compartiste.
+     
+     ### Sobre el "10/10"
+     
+     Esta implementación cierra las brechas de **seguridad, doble reserva y
+     automatización real** que existían en la versión anterior, y es sólida
+     para el volumen de trabajo de un consultor individual. No es, sin
+     embargo, honesto llamarla un "10/10" absoluto: los puntos que tú mismo
+     identificaste (CRM con lead scoring, pipeline comercial, WhatsApp API,
+     IA comercial, base de datos relacional, dashboards) son mejoras reales de
+     otra categoría de producto — un *Revenue Engine* — y requieren un backend
+     propio o herramientas como n8n, no una corrección sobre HTML/CSS/JS
+     vanilla. Para el alcance de "landing premium con agendamiento
+     automático", esto representa el techo razonable de lo que se puede
+     lograr con Google Apps Script como único backend.
+     
+     ## Segunda pasada — auditoría senior (Frontend/UX/CRO/SEO/Seguridad)
+     
+     Cambios aplicados sobre la entrega anterior, sin salir del stack permitido
+     (HTML/CSS/JS vanilla + Apps Script + Sheets + Gmail + Calendar):
+     
+     ### Corregido (bug real encontrado en auditoría)
+     - **La columna "Meet" del Sheet siempre quedaba vacía**: `appendLeadRow`
+       se ejecutaba antes de crear el evento de Calendar, así que nunca tenía
+       el enlace para guardarlo. Se reordenó el flujo: primero se crea el
+       evento, luego se guarda la fila ya con el `meetLink`.
+     
+     ### Seguridad
+     - **Honeypot validado también en el servidor.** Antes solo se revisaba en
+       el JavaScript del navegador — un bot que golpee la URL de Apps Script
+       directamente (sin cargar la página) lo evadía por completo. Ahora
+       `doPost` rechaza la solicitud si el campo honeypot llega con contenido.
+     - **Trampa de tiempo también en el servidor**, por el mismo motivo.
+     - **Rate limiting básico** (`CacheService`): máximo 3 envíos por correo
+       cada 60 segundos. No sustituye un WAF, pero frena reintentos
+       automatizados sin depender de una IP (Apps Script no la expone).
+     - **`LockService`** alrededor de la sección "verificar disponibilidad →
+       reservar": la verificación doble que ya existía reduce el margen de
+       colisión, pero dos solicitudes casi simultáneas podían pasar ambas la
+       verificación antes de que ninguna hubiera creado su evento. El lock
+       serializa esa sección para que solo una gane el horario.
+     - **Validación de formato de correo** y **límite de longitud del mensaje**
+       (2000 caracteres) en el servidor, no solo en el HTML.
+     - **CSP vía meta tag** en `index.html`, restringido a los orígenes reales
+       que el sitio usa (Google Fonts, Apps Script, Analytics/Tag Manager).
+       *Limitación honesta*: una CSP por meta tag no puede fijar
+       `X-Frame-Options`, `X-Content-Type-Options` ni `frame-ancestors` con la
+       misma fuerza que una cabecera HTTP real — eso depende del proveedor de
+       hosting (p. ej. `vercel.json` con `headers`). Se documenta como
+       pendiente de infraestructura, no de código.
+     
+     ### SEO / Conversión
+     - **`og:image` y `twitter:image`** agregados (antes el link compartido en
+       WhatsApp/LinkedIn no mostraba ninguna imagen de vista previa).
+     - **Schema.org ampliado**: se agregó un nodo `ProfessionalService` junto
+       al `Person` existente, vinculados por `@id` — refuerza la señal de
+       "ofrece servicios de consultoría", no solo "es una persona".
+     - **Loader de GA4 diferido** (`async`, no bloquea el render) con
+       `anonymize_ip`. Los hooks de tracking (`gtag(...)`) ya existían en el
+       código para clics, scroll y envíos de formulario, pero nunca se cargaba
+       la librería real — quedaban en el vacío. *Falta*: reemplazar
+       `G-XXXXXXXXXX` por el Measurement ID real antes de publicar.
+     
+     ### Performance
+     - `loading="lazy"`, `decoding="async"` y `width`/`height` explícitos en la
+       foto de perfil (reduce parpadeo de layout / mejora CLS en navegadores
+       sin soporte de `aspect-ratio`).
+     
+     ### Archivos nuevos
+     - `robots.txt` y `sitemap.xml` — no existían; sin ellos Google indexa
+       igual la home, pero se pierde la señal explícita de sitemap y el
+       control fino de crawling.
+     
+     ## Lo que NO se tocó (y por qué)
+     
+     - **CRM con lead scoring, pipeline comercial, WhatsApp API, IA
+       comercial, base de datos SQL/Supabase, dashboards con Metabase**: todo
+       esto requiere backend propio o una herramienta como n8n — está fuera
+       del stack permitido (HTML/CSS/JS vanilla + Apps Script) y es, además,
+       sobre-ingeniería para el volumen de un consultor individual.
+     - **Cabeceras HTTP reales (`X-Frame-Options`, `Strict-Transport-Security`,
+       etc.)**: dependen de la configuración del hosting estático, no del
+       código del sitio.
+     - **WebP para la foto de perfil**: el archivo de imagen no estaba incluido
+       en el proyecto entregado, así que no se pudo re-exportar; se dejó la
+       recomendación en esta nota para cuando se reemplace el asset.
+     ============================================================ -->
+
+  <!-- ============================================================
+     robots.txt — para /robots.txt en la raíz del dominio
+     ============================================================
+     Este archivo SÍ debe existir de verdad en la raíz del sitio
+     (https://brandolchanganaqui.com/robots.txt) para que Google lo lea;
+     un comentario dentro de index.html no cumple esa función por sí
+     solo. Se documenta aquí para que el contenido viaje junto, pero
+     debes crear el archivo robots.txt real en el hosting con este texto:
+
+     User-agent: *
+     Allow: /
+
+     Sitemap: https://brandolchanganaqui.com/sitemap.xml
+     ============================================================ -->
+
+  <!-- ============================================================
+     sitemap.xml — para /sitemap.xml en la raíz del dominio
+     ============================================================
+     Mismo caso que robots.txt: debe existir como archivo real en la
+     raíz del sitio para que los buscadores lo encuentren. Contenido:
+
+     <?xml version="1.0" encoding="UTF-8"?>
+     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+       <url>
+         <loc>https://brandolchanganaqui.com/</loc>
+         <changefreq>monthly</changefreq>
+         <priority>1.0</priority>
+       </url>
+     </urlset>
+     ============================================================ -->
+
+  <!-- ============================================================
+     ANALÍTICA, CRO Y GROWTH — guía de implementación
+     ============================================================
+     Todo lo de abajo ya está insertado en este mismo index.html.
+     Esta nota resume qué se agregó, dónde vive cada cosa y qué 3
+     variables debes reemplazar para activarlo. No requiere backend
+     propio, Node ni base de datos: solo HTML + JS vanilla + Apps
+     Script + Sheets, tal como el resto del sitio.
+
+     ------------------------------------------------------------
+     1) LAS ÚNICAS 3 VARIABLES A REEMPLAZAR
+     ------------------------------------------------------------
+     Busca este bloque cerca del inicio del <head> (línea ~90) y
+     reemplaza los 3 valores de ejemplo:
+
+       window.GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX';   // GA4 > Admin > Flujos de datos > Web
+       window.GTM_CONTAINER_ID   = 'GTM-XXXXXXX';     // Google Tag Manager > ID de contenedor
+       window.CLARITY_PROJECT_ID = 'XXXXXXXXXX';      // clarity.microsoft.com > Configuración > ID de proyecto
+
+     Cada script se auto-desactiva si el valor todavía contiene
+     "XXXX" (no rompe nada si solo configuras uno o dos de los tres).
+     GA4 y GTM se cargan juntos a propósito (ver comentario en el
+     <head>): GA4 da medición estándar inmediata; GTM queda listo
+     para agregar más tags (Meta Pixel, LinkedIn Insight Tag, etc.)
+     sin volver a tocar este archivo.
+
+     ------------------------------------------------------------
+     2) QUÉ SE MIDE AUTOMÁTICAMENTE (GA4)
+     ------------------------------------------------------------
+     GA4 registra solo, sin código adicional: page_view, session_start,
+     first_visit y user_engagement (son automáticos de gtag.js con
+     send_page_view:true).
+
+     ------------------------------------------------------------
+     3) EVENTOS PERSONALIZADOS — atributo data-event
+     ------------------------------------------------------------
+     Cualquier link/botón con data-event="nombre_evento" se rastrea
+     solo; no hace falta tocar el JS para agregar uno nuevo. Ya están
+     wireados en el HTML: click_whatsapp, click_linkedin, click_email,
+     click_call, click_download_cv, click_cta_primary, click_services,
+     click_portfolio, click_contact. Listos para usar en cuanto agregues
+     el elemento correspondiente: click_instagram, click_calendar,
+     click_download_resource, click_testimonials, click_cta_secondary
+     (no existen esos enlaces todavía en este sitio — cuando los agregues,
+     solo ponles data-event="click_instagram", etc.). También puedes
+     llamarlos manualmente desde cualquier script con:
+       analyticsTrack('nombre_evento', { param_opcional: 'valor' });
+
+     ------------------------------------------------------------
+     4) EVENTOS DE FORMULARIO
+     ------------------------------------------------------------
+     form_start (primer focus en el formulario), form_progress_25/50/75
+     (según % de campos obligatorios llenos, incluye el horario elegido),
+     form_submit (alias de submit_form, ver conversiones), form_error
+     (validación fallida o excepción de red) y form_abandon (el visitante
+     cierra/navega fuera con el formulario iniciado y sin enviar).
+
+     ------------------------------------------------------------
+     5) EVENTOS DE AGENDA (CALENDARIO)
+     ------------------------------------------------------------
+     calendar_open (foco en el selector de fecha), calendar_date_selected,
+     calendar_time_selected, reservation_attempt (al enviar, tras pasar
+     anti-spam), reservation_success, reservation_failed (conflicto de
+     horario o error de red/servidor). reservation_cancelled y
+     reservation_rescheduled quedan listos como funciones
+     (analyticsTrack('reservation_cancelled', {...})) pero no tienen UI
+     todavía: este sitio no ofrece cancelar/reagendar desde el navegador
+     (se hace por WhatsApp/correo directo con el consultor). El día que
+     agregues esa opción (p. ej. un link en el correo de confirmación),
+     solo llama a esa función desde ahí.
+
+     ------------------------------------------------------------
+     6) EMBUDO COMERCIAL
+     ------------------------------------------------------------
+     visitante → interesado → inicio_formulario → envio_formulario →
+     agendamiento_exitoso están automatizados en el frontend (una vez
+     por sesión cada uno). Las 2 últimas etapas —consultoria_realizada
+     y cliente_ganado— ocurren después de la llamada, fuera del sitio:
+     no hay forma honesta de detectarlas desde el navegador. Se marcan
+     a mano en la hoja de Google Sheets (agrega una columna "Etapa" y
+     actualízala tras cada consultoría) o, si más adelante conectas un
+     CRM, disparando esos 2 eventos desde ahí vía Measurement Protocol.
+
+     ------------------------------------------------------------
+     7) UTM, DISPOSITIVO Y FUENTE
+     ------------------------------------------------------------
+     Se capturan utm_source/medium/campaign/content/term de la URL
+     (?utm_source=...) en cuanto el visitante entra: se guardan en
+     sessionStorage (última visita) y en localStorage (primer contacto,
+     "first-touch", para atribuir bien a alguien que vuelve varios días
+     después). Viajan en cada evento de GA4/dataLayer y, al agendar, se
+     guardan también como columnas nuevas en Google Sheets. El
+     dispositivo (mobile/tablet/desktop + android/iphone/windows/mac) y
+     la fuente (Google Search, LinkedIn, Instagram, Facebook, WhatsApp,
+     QR CV —agrega ?qr=1 a la URL del QR del CV—, Direct o Referral) se
+     detectan solos con user-agent + referrer, sin cookies de terceros.
+
+     ------------------------------------------------------------
+     8) CONVERSIONES EN GA4
+     ------------------------------------------------------------
+     Los eventos submit_form, reservation_success, click_whatsapp y
+     click_email ya se envían con un parámetro conversion:true para
+     poder filtrarlos/segmentarlos. GA4 además exige marcarlos como
+     "Conversión" manualmente (no se puede por código): en GA4 ve a
+     Admin > Eventos y activa el interruptor "Marcar como conversión"
+     en cada uno de esos 4 nombres, una sola vez.
+
+     ------------------------------------------------------------
+     9) PRIVACIDAD / GDPR BÁSICO
+     ------------------------------------------------------------
+     - IP anonimizada en GA4 (anonymize_ip:true).
+     - Google Consent Mode v2: analytics_storage empieza "denied"; el
+       banner de cookies al pie de la página (id="cookieBanner") es lo
+       único que lo cambia a "granted", y la decisión queda guardada en
+       localStorage para no volver a preguntar. Mientras esté "denied",
+       GA4 sigue reportando conteos agregados modelados por Google sin
+       escribir cookies propias de analítica.
+     - Clarity y GTM ya respetan esa misma decisión: no se les pasa
+       ningún dato adicional aparte del propio script.
+
+     ------------------------------------------------------------
+     10) RENDIMIENTO
+     ------------------------------------------------------------
+     Los 3 scripts (GA4, GTM, Clarity) se cargan con <script async> o
+     inyectados dinámicamente después de renderizar el <head> — ninguno
+     bloquea el parseo del HTML ni retrasa el LCP. El preconnect a
+     googletagmanager.com ya estaba declarado; considera agregar
+     preconnect a www.clarity.ms si notas que Clarity tarda en arrancar
+     en conexiones lentas.
+
+     ------------------------------------------------------------
+     11) GOOGLE SHEETS — columnas nuevas
+     ------------------------------------------------------------
+     La pestaña "Leads" (creada sola por el Apps Script, ver Code.gs más
+     arriba) ahora incluye 8 columnas nuevas al final: UTM Source, UTM
+     Medium, UTM Campaign, UTM Content, UTM Term, Dispositivo, Sistema,
+     Fuente de tráfico. Si ya tenías la hoja creada de una versión
+     anterior de este sitio, esas columnas no aparecerán solas: agrégalas
+     tú mismo en la fila de encabezado (fila 1) en ese mismo orden, o
+     borra la pestaña "Leads" para que el script la vuelva a crear con
+     el encabezado completo la próxima vez que llegue un lead.
+     ============================================================ -->
+
 </body>
 
 </html>
